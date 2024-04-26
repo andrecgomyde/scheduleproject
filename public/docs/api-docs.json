@@ -1,0 +1,50 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "scheduleproject API Documentation",
+      "version": "1.0.0",
+      "description": "API documentation for the scheduleproject"
+    },
+    "paths": {
+      "/api/activities": {
+        "get": {
+          "summary": "Get all activities",
+          "responses": {
+            "200": {
+              "description": "Successful operation",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "start_date": {
+                          "type": "string",
+                          "format": "date"
+                        },
+                        "due_date": {
+                          "type": "string",
+                          "format": "date"
+                        },
+                        "status": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
