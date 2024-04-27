@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Author: André Gomyde
+ */
+
 namespace App\Http\Controllers;
 
 use App\Models\Activity;

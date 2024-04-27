@@ -1,3 +1,158 @@
+Desafio Técnico - Backend PHP 2023 para a posição de Tech Lead na Febrafar
+---
+Technical Challenge - Backend PHP 2023 proposed by Febrafar for the Tech Lead position
+---
+
+### Português:
+
+# API do Projeto Schedule
+
+Este projeto implementa uma API RESTful para gerenciamento de atividades, desenvolvida utilizando o framework Laravel (versão 8) e banco de dados MySQL. Inclui recursos como operações CRUD para atividades, autenticação de usuário usando Laravel Sanctum, documentação Swagger, testes unitários com PHPUnit e testes no Postman. Abaixo está uma visão detalhada dos componentes do projeto e como eles atendem aos requisitos do desafio fornecido:
+
+## Componentes do Projeto:
+
+### 1. Modelo de Atividade (`Activity.php`):
+- Gerencia os dados da atividade, incluindo título, data de início, data de vencimento, data de conclusão, status, descrição, ID do usuário e ID do tipo.
+- Define relacionamentos com outras entidades, como usuários, para garantir a integridade dos dados.
+
+### 2. Controlador de Atividade (`ActivityController.php`):
+- Implementa operações CRUD para atividades.
+- Valida os dados das solicitações recebidas para garantir consistência e segurança.
+- Trata erros e retorna respostas HTTP apropriadas.
+
+### 3. Testes PHPUnit (`ActivityTest.php` e `ActivityControllerTest.php`):
+- Testam a funcionalidade do modelo `Activity` e dos métodos do `ActivityController`.
+- Verificam a criação, atualização e exclusão de atividades com dados válidos e inválidos.
+- Verificam a integridade dos dados após operações.
+
+### 4. Testes no Postman:
+- Testam minuciosamente todas as rotas e solicitações usando o Postman.
+- Validam o comportamento da API em vários cenários e casos extremos.
+
+### 5. Documentação Swagger:
+- Integrou o Swagger para gerar documentação detalhada para a API.
+- Fornece uma interface interativa para explorar e testar os endpoints da API.
+- Facilita a compreensão e o uso da API pelos desenvolvedores.
+
+## Atendimento aos Requisitos do Desafio:
+
+### Conhecimento e Uso de Recursos do Laravel:
+- Alavancou os recursos do framework Laravel, como Eloquent ORM, roteamento, middleware e validação, de forma eficaz em todo o projeto.
+- Organizou a estrutura do projeto de acordo com as convenções do Laravel.
+
+### Organização e Documentação do Código:
+- Manteve o código limpo e bem organizado seguindo os padrões PSR.
+- Documentou extensivamente o código, incluindo comentários de métodos e anotações do Swagger.
+
+### Lógica de Programação e Nível de Abstração:
+- Implementou soluções lógicas e abstratas para gerenciar as interações de atividades e usuários.
+- Garantiu uma clara separação de preocupações entre as classes de modelo, controlador e teste.
+
+### Princípios SOLID:
+- Adotou os princípios SOLID projetando classes com responsabilidades únicas e inversão de dependência.
+
+### Testes Unitários com PHPUnit:
+- Desenvolveu testes abrangentes com PHPUnit para validar as funcionalidades do modelo e do controlador.
+- Alcançou alta cobertura de código para garantir robustez e confiabilidade.
+
+### Recursos de API RESTful:
+- Implementou uma API totalmente RESTful com endpoints CRUD para atividades.
+- Forneceu opções de filtragem para atividades por intervalo de datas, conforme especificado no desafio.
+
+### Uso de Recursos SQL:
+- Utilizou migrações do Laravel para gerenciar alterações no esquema do banco de dados e garantir consistência em todos os ambientes.
+- Empregou consultas SQL de forma eficiente para recuperar e manipular dados conforme requisitos comerciais.
+
+## Instruções para Uso:
+
+1. Clone o repositório para sua máquina local.
+2. Instale as dependências do Composer usando `composer install`.
+3. Configure o arquivo `.env` com suas credenciais do banco de dados.
+4. Execute as migrações para criar as tabelas necessárias usando `php artisan migrate`.
+5. Inicie o servidor de desenvolvimento com `php artisan serve`.
+6. Acesse os endpoints da API conforme documentado na documentação Swagger ou na coleção Postman.
+
+Para instruções mais detalhadas e documentação da API, consulte a documentação Swagger ou a coleção Postman fornecidas no repositório.
+
+---
+**Observação:** Se selecionado, podemos agendar uma sessão de revisão de código para discutir o código entregue em detalhes e responder a quaisquer dúvidas ou preocupações.
+
+### English:
+
+# Schedule Project API
+
+This project implements a RESTful API for activity management, developed using the
+
+ Laravel framework (version 8) and MySQL database. It includes features such as CRUD operations for activities, user authentication using Laravel Sanctum, Swagger documentation, unit testing with PHPUnit, and Postman testing. Below is a detailed overview of the project components and how they meet the requirements of the provided challenge:
+
+## Project Components:
+
+### 1. Activity Model (`Activity.php`):
+- Manages activity data, including title, start date, due date, completion date, status, description, user ID, and type ID.
+- Defines relationships with other entities, such as users, to ensure data integrity.
+
+### 2. Activity Controller (`ActivityController.php`):
+- Implements CRUD operations for activities.
+- Validates request data to ensure consistency and security.
+- Handles errors and returns appropriate HTTP responses.
+
+### 3. PHPUnit Tests (`ActivityTest.php` and `ActivityControllerTest.php`):
+- Test the functionality of the `Activity` model and `ActivityController` methods.
+- Verify the creation, update, and deletion of activities with valid and invalid data.
+- Check data integrity after operations.
+
+### 4. Postman Tests:
+- Thoroughly test all routes and requests using Postman.
+- Validate API behavior in various scenarios and edge cases.
+
+### 5. Swagger Documentation:
+- Integrated Swagger to generate detailed documentation for the API.
+- Provides an interactive interface to explore and test API endpoints.
+- Facilitates understanding and usage of the API by developers.
+
+## Meeting Challenge Requirements:
+
+### Knowledge and Use of Laravel Resources:
+- Leveraged Laravel framework resources such as Eloquent ORM, routing, middleware, and validation effectively throughout the project.
+- Organized project structure according to Laravel conventions.
+
+### Code Organization and Documentation:
+- Kept the code clean and well-organized following PSR standards.
+- Extensively documented the code, including method comments and Swagger annotations.
+
+### Programming Logic and Abstraction Level:
+- Implemented logical and abstract solutions to manage activity and user interactions.
+- Ensured clear separation of concerns between model, controller, and test classes.
+
+### SOLID Principles:
+- Adopted SOLID principles by designing classes with single responsibilities and dependency inversion.
+
+### Unit Testing with PHPUnit:
+- Developed comprehensive tests with PHPUnit to validate model and controller functionalities.
+- Achieved high code coverage to ensure robustness and reliability.
+
+### RESTful API Features:
+- Implemented a fully RESTful API with CRUD endpoints for activities.
+- Provided filtering options for activities by date range, as specified in the challenge.
+
+### Use of SQL Resources:
+- Used Laravel migrations to manage database schema changes and ensure consistency across all environments.
+- Employed SQL queries efficiently to retrieve and manipulate data as per business requirements.
+
+## Usage Instructions:
+
+1. Clone the repository to your local machine.
+2. Install Composer dependencies using `composer install`.
+3. Configure the `.env` file with your database credentials.
+4. Run migrations to create necessary tables using `php artisan migrate`.
+5. Start the development server with `php artisan serve`.
+6. Access API endpoints as documented in the Swagger documentation or Postman collection.
+
+For more detailed instructions and API documentation, refer to the Swagger documentation or Postman collection provided in the repository.
+
+---
+**Note:** If selected, we can schedule a code review session to discuss the delivered code in detail and address any questions or concerns.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
