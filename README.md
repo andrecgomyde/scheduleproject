@@ -7,7 +7,7 @@ Technical Challenge - Backend PHP 2023 proposed by Febrafar, Farmarcas for the T
 
 # API do Projeto Schedule
 
-Este projeto implementa uma API RESTful para gerenciamento de atividades, desenvolvida utilizando o framework Laravel (versão 8) e banco de dados MySQL. Inclui recursos como operações CRUD para atividades, autenticação de usuário usando Laravel Sanctum, documentação Swagger, testes unitários com PHPUnit e testes no Postman. Abaixo está uma visão detalhada dos componentes do projeto e como eles atendem aos requisitos do desafio fornecido:
+Este projeto implementa uma API RESTful para gerenciamento de atividades, desenvolvida utilizando o framework Laravel 9.52.16 e banco de dados MySQL. Inclui recursos como operações CRUD para atividades, autenticação de usuário usando Laravel Sanctum, documentação Swagger, testes unitários com PHPUnit e testes no Postman. Abaixo está uma visão detalhada dos componentes do projeto e como eles atendem aos requisitos do desafio fornecido:
 
 ## Componentes do Projeto:
 
@@ -83,7 +83,7 @@ Para instruções mais detalhadas e documentação da API, consulte a documenta�
 
 This project implements a RESTful API for activity management, developed using the
 
- Laravel framework (version 8) and MySQL database. It includes features such as CRUD operations for activities, user authentication using Laravel Sanctum, Swagger documentation, unit testing with PHPUnit, and Postman testing. Below is a detailed overview of the project components and how they meet the requirements of the provided challenge:
+ Laravel framework 9.52.16 and MySQL database. It includes features such as CRUD operations for activities, user authentication using Laravel Sanctum, Swagger documentation, unit testing with PHPUnit, and Postman testing. Below is a detailed overview of the project components and how they meet the requirements of the provided challenge:
 
 ## Project Components:
 
